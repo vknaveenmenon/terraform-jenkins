@@ -25,10 +25,5 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            sh 'terraform destroy -auto-approve' // Destroy the infrastructure after the pipeline finishes
-        }
-    }
 }
 
